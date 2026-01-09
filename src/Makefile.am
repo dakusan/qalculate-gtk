@@ -72,6 +72,7 @@ qalculate_gtk_SOURCES = \
 	mainwindow.cc mainwindow.h \
 	modes.cc modes.h \
 	util.cc util.h \
+	custom-min.cc \
 	unordered_map_define.h support.h settings.h
 
 nodist_qalculate_gtk_SOURCES = ui.c flags.c

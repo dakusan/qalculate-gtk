@@ -1,3 +1,30 @@
+## Custom Minimal Interface Variant
+
+This repository contains a small, self-contained modification to **qalculate-gtk** intended for vertically constrained layouts.
+Functionality and behavior are identical to the standard interface, with the following UI changes:
+
+### No title bar
+- The window uses a header-less layout. It can be moved via **middle-mouse click**, while standard edge resizing remains fully supported.
+
+### Auto-hidden menu bar
+- The menu bar is hidden by default and appears when **Alt** is pressed without invoking an accelerator.
+- It automatically hides again when menu interaction ends.
+- All existing menu accelerators continue to function normally.
+
+### Resizable history pane
+- The history pane is no longer constrained by the conversion tab and can be resized down to a single-line height.
+
+### Screenshot
+
+<img src="doc/html/figures/Qalculate-Custom-Min.png" width="562" height="293">
+
+> [!Note]
+> This change does not modify any existing source files. It adds a single new source file, which must be listed in the Makefile. As a result, it should be a straightforward drop-in for future Qalculate releases.
+>
+> The implementation was originally developed against v4.9.0 (2023) and required no changes when tested with the current release (v5.8.2).
+
+<hr>
+
 # Qalculate! GTK UI
 
 <a href="https://github.com/Qalculate/qalculate-gtk/raw/master/data/qalculate-gtk-appdata-1.png"><img src="https://github.com/Qalculate/qalculate-gtk/raw/master/data/qalculate-gtk-appdata-1.png" width="510"></a>
